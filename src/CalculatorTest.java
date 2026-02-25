@@ -1,10 +1,10 @@
-import org.junit.*;
+import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class CalculatorTest {
 
     @Test
-    void testInfixToPostfix() {
+    public void testInfixToPostfix() {
 
         StackFactory.configure("arraylist", "");
         Calc calculator = Calculator.getInstance();
@@ -15,7 +15,7 @@ public class CalculatorTest {
     }
 
     @Test
-    void testEvaluatePostfix() {
+    public void testEvaluatePostfix() {
 
         StackFactory.configure("arraylist", "");
         Calc calculator = Calculator.getInstance();

@@ -1,37 +1,41 @@
-import org.junit.*;
+import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class ArrayListStackTest {
 
     @Test
-    void testPushAndPop() {
+    public void testPushAndPop() {
+
         Stack<Integer> stack = new ArrayListStack<>();
 
         stack.push(10);
         stack.push(20);
 
-        assertEquals(20, stack.pop());
-        assertEquals(10, stack.pop());
+        assertEquals(20, (int) stack.pop());
+        assertEquals(10, (int) stack.pop());
     }
 
     @Test
-    void testPeek() {
+    public void testPeek() {
+
         Stack<Integer> stack = new ArrayListStack<>();
 
         stack.push(5);
         stack.push(8);
 
-        assertEquals(8, stack.peek());
+        assertEquals(8, (int) stack.peek());
         assertEquals(2, stack.size());
     }
 
     @Test
-    void testIsEmpty() {
+    public void testIsEmpty() {
+
         Stack<Integer> stack = new ArrayListStack<>();
 
         assertTrue(stack.isEmpty());
 
         stack.push(1);
+
         assertFalse(stack.isEmpty());
     }
 }
