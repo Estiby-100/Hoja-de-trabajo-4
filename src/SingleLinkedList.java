@@ -1,3 +1,4 @@
+
 public class SingleLinkedList<E> extends AbstractList<E> {
 
     private Node<E> head;

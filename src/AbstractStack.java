@@ -1,4 +1,5 @@
-public abstract class AbstractList<E> implements ListADT<E> {
+
+public abstract class AbstractStack<E> implements Stack<E> {
     protected int count;
 
     @Override

@@ -1,3 +1,4 @@
+
 public interface ListADT<E> {
     void add(E element);
     E removeLast();
