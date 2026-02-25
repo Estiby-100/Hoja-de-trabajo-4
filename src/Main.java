@@ -20,7 +20,7 @@ public class Main {
 
         Calc calculator = Calculator.getInstance();
 
-        Scanner file = new Scanner(new File("\"C:\\Users\\jsanc\\Downloads\\HJT4 prueba\\HJT4 prueba\\Datos.txt\""));
+        Scanner file = new Scanner(new File("src/Datos.txt"));
 
         while (file.hasNextLine()) {
             String line = file.nextLine().trim();
